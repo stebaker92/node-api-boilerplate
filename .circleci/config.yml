@@ -30,11 +30,11 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-  deployment:
-    staging:
-      branch: circle-heroku-deploy
-      heroku:
-        appname: stebakerdev-node-starter
+deployment:
+  staging:
+    branch: circle-heroku-deploy
+    heroku:
+      appname: stebakerdev-node-starter
         
 
 
